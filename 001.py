@@ -18,9 +18,9 @@ def euler_001_a(limit):
 
 
 def euler_001_b(limit):
-    return sum(i for i in xrange(limit) if not (i % 3 and i % 5))
+    return sum([i for i in xrange(limit) if not (i % 3 and i % 5)])
 
 response = euler_001_a(1000)
-# response = euler_001_b(1000)
+response = euler_001_b(1000)
 
 print(response)
